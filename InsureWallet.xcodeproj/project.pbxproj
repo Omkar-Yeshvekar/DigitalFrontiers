@@ -1,0 +1,834 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6718A7AB2E27F0930012D1FA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6718A7AA2E27F0930012D1FA /* LoginView.swift */; };
+		6718A7B02E27F1570012D1FA /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6718A7AF2E27F1570012D1FA /* LoginViewModel.swift */; };
+		6718A7B22E2AF3F40012D1FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6718A7B12E2AF3F40012D1FA /* AppDelegate.swift */; };
+		6718A7B92E2AF85D0012D1FA /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6718A7B82E2AF85D0012D1FA /* AuthService.swift */; };
+		6718A7BA2E2AF85D0012D1FA /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6718A7B82E2AF85D0012D1FA /* AuthService.swift */; };
+		6718A7BB2E2AF85D0012D1FA /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6718A7B82E2AF85D0012D1FA /* AuthService.swift */; };
+		676B70672E2FACF700A5FC54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 676B70662E2FACF700A5FC54 /* LaunchScreen.storyboard */; };
+		676B706C2E30DC5200A5FC54 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676B706B2E30DC5200A5FC54 /* NotificationService.swift */; };
+		676B70712E31E28D00A5FC54 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 676B70702E31E28D00A5FC54 /* FirebaseAuth */; };
+		676B70732E31E28D00A5FC54 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 676B70722E31E28D00A5FC54 /* FirebaseCore */; };
+		676B70752E31E28D00A5FC54 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 676B70742E31E28D00A5FC54 /* FirebaseMessaging */; };
+		677112322E2E994A00B6FEEA /* Policy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677112312E2E994A00B6FEEA /* Policy.swift */; };
+		677112342E2E997F00B6FEEA /* PolicyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677112332E2E997F00B6FEEA /* PolicyService.swift */; };
+		677112362E2E99B300B6FEEA /* PolicyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677112352E2E99B300B6FEEA /* PolicyViewModel.swift */; };
+		677112382E2E99E600B6FEEA /* PolicyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677112372E2E99E600B6FEEA /* PolicyListView.swift */; };
+		6771123C2E2EAF5B00B6FEEA /* PassService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6771123B2E2EAF5B00B6FEEA /* PassService.swift */; };
+		6771123F2E2EB21800B6FEEA /* pass.pkpass in Resources */ = {isa = PBXBuildFile; fileRef = 6771123A2E2EADF700B6FEEA /* pass.pkpass */; };
+		679AAF542E322E53009424A7 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 679AAF532E322E53009424A7 /* FirebaseAuth */; };
+		679AAF562E323341009424A7 /* PolicyViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679AAF552E323341009424A7 /* PolicyViewModelTests.swift */; };
+		679AAF582E323625009424A7 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 679AAF572E323625009424A7 /* FirebaseAuth */; };
+		679AAF5C2E3237C8009424A7 /* MockAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679AAF5B2E3237C8009424A7 /* MockAuthService.swift */; };
+		679AAF5F2E323FDD009424A7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E865D82E2B01B50071AD9D /* User.swift */; };
+		679AAF602E323FDE009424A7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E865D82E2B01B50071AD9D /* User.swift */; };
+		67DB02942E26DA670024B1EF /* InsureWalletApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DB02932E26DA670024B1EF /* InsureWalletApp.swift */; };
+		67DB02982E26DA680024B1EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67DB02972E26DA680024B1EF /* Assets.xcassets */; };
+		67DB029B2E26DA680024B1EF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67DB029A2E26DA680024B1EF /* Preview Assets.xcassets */; };
+		67DB02A52E26DA680024B1EF /* InsureWalletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DB02A42E26DA680024B1EF /* InsureWalletTests.swift */; };
+		67DB02AF2E26DA680024B1EF /* InsureWalletUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DB02AE2E26DA680024B1EF /* InsureWalletUITests.swift */; };
+		67DB02B12E26DA680024B1EF /* InsureWalletUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DB02B02E26DA680024B1EF /* InsureWalletUITestsLaunchTests.swift */; };
+		67E865D92E2B01B50071AD9D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E865D82E2B01B50071AD9D /* User.swift */; };
+		67E865DE2E2C7CBA0071AD9D /* PolicyCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E865DD2E2C7CBA0071AD9D /* PolicyCardView.swift */; };
+		B6AA5F7E2E3203CB005AE013 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6AA5F7D2E3203CB005AE013 /* GoogleService-Info.plist */; };
+		B6AA5F7F2E3203CB005AE013 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6AA5F7D2E3203CB005AE013 /* GoogleService-Info.plist */; };
+		B6AA5F802E3203CB005AE013 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6AA5F7D2E3203CB005AE013 /* GoogleService-Info.plist */; };
+		B6EEA3002E314A5800E046C5 /* Aviva.pkpass in Resources */ = {isa = PBXBuildFile; fileRef = B6EEA2FF2E314A5800E046C5 /* Aviva.pkpass */; };
+		B6EEA3022E314A6100E046C5 /* Lic.pkpass in Resources */ = {isa = PBXBuildFile; fileRef = B6EEA3012E314A6100E046C5 /* Lic.pkpass */; };
+		B6FF59862E2ED326000B9E58 /* PolicyDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FF59852E2ED322000B9E58 /* PolicyDetailsView.swift */; };
+		B6FF59882E2ED3C6000B9E58 /* PolicyDetailsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FF59872E2ED3C1000B9E58 /* PolicyDetailsHeaderView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		67DB02A12E26DA680024B1EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 67DB02882E26DA670024B1EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 67DB028F2E26DA670024B1EF;
+			remoteInfo = InsureWallet;
+		};
+		67DB02AB2E26DA680024B1EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 67DB02882E26DA670024B1EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 67DB028F2E26DA670024B1EF;
+			remoteInfo = InsureWallet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6718A7AA2E27F0930012D1FA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		6718A7AF2E27F1570012D1FA /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		6718A7B12E2AF3F40012D1FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6718A7B82E2AF85D0012D1FA /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		676B70662E2FACF700A5FC54 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		676B706B2E30DC5200A5FC54 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		677112312E2E994A00B6FEEA /* Policy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Policy.swift; sourceTree = "<group>"; };
+		677112332E2E997F00B6FEEA /* PolicyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolicyService.swift; sourceTree = "<group>"; };
+		677112352E2E99B300B6FEEA /* PolicyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolicyViewModel.swift; sourceTree = "<group>"; };
+		677112372E2E99E600B6FEEA /* PolicyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolicyListView.swift; sourceTree = "<group>"; };
+		6771123A2E2EADF700B6FEEA /* pass.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = pass.pkpass; sourceTree = "<group>"; };
+		6771123B2E2EAF5B00B6FEEA /* PassService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassService.swift; sourceTree = "<group>"; };
+		679AAF552E323341009424A7 /* PolicyViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolicyViewModelTests.swift; sourceTree = "<group>"; };
+		679AAF5B2E3237C8009424A7 /* MockAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAuthService.swift; sourceTree = "<group>"; };
+		67DB02902E26DA670024B1EF /* InsureWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InsureWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		67DB02932E26DA670024B1EF /* InsureWalletApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsureWalletApp.swift; sourceTree = "<group>"; };
+		67DB02972E26DA680024B1EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		67DB029A2E26DA680024B1EF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		67DB02A02E26DA680024B1EF /* InsureWalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InsureWalletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		67DB02A42E26DA680024B1EF /* InsureWalletTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsureWalletTests.swift; sourceTree = "<group>"; };
+		67DB02AA2E26DA680024B1EF /* InsureWalletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InsureWalletUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		67DB02AE2E26DA680024B1EF /* InsureWalletUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsureWalletUITests.swift; sourceTree = "<group>"; };
+		67DB02B02E26DA680024B1EF /* InsureWalletUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsureWalletUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		67E865D82E2B01B50071AD9D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		67E865DD2E2C7CBA0071AD9D /* PolicyCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolicyCardView.swift; sourceTree = "<group>"; };
+		B6AA5F7C2E31FF05005AE013 /* InsureWallet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InsureWallet.entitlements; sourceTree = "<group>"; };
+		B6AA5F7D2E3203CB005AE013 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B6EEA2FF2E314A5800E046C5 /* Aviva.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = Aviva.pkpass; sourceTree = "<group>"; };
+		B6EEA3012E314A6100E046C5 /* Lic.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lic.pkpass; sourceTree = "<group>"; };
+		B6FF59852E2ED322000B9E58 /* PolicyDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolicyDetailsView.swift; sourceTree = "<group>"; };
+		B6FF59872E2ED3C1000B9E58 /* PolicyDetailsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolicyDetailsHeaderView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		67DB028D2E26DA670024B1EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				676B70752E31E28D00A5FC54 /* FirebaseMessaging in Frameworks */,
+				676B70732E31E28D00A5FC54 /* FirebaseCore in Frameworks */,
+				676B70712E31E28D00A5FC54 /* FirebaseAuth in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67DB029D2E26DA680024B1EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				679AAF542E322E53009424A7 /* FirebaseAuth in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67DB02A72E26DA680024B1EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				679AAF582E323625009424A7 /* FirebaseAuth in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6718A7A92E27F0780012D1FA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B6FF59872E2ED3C1000B9E58 /* PolicyDetailsHeaderView.swift */,
+				B6FF59852E2ED322000B9E58 /* PolicyDetailsView.swift */,
+				6718A7AA2E27F0930012D1FA /* LoginView.swift */,
+				67E865DD2E2C7CBA0071AD9D /* PolicyCardView.swift */,
+				677112372E2E99E600B6FEEA /* PolicyListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6718A7AC2E27F1060012D1FA /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				6718A7AF2E27F1570012D1FA /* LoginViewModel.swift */,
+				677112352E2E99B300B6FEEA /* PolicyViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		676B70682E30D6FE00A5FC54 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		67DB02872E26DA670024B1EF = {
+			isa = PBXGroup;
+			children = (
+				676B70662E2FACF700A5FC54 /* LaunchScreen.storyboard */,
+				B6AA5F7D2E3203CB005AE013 /* GoogleService-Info.plist */,
+				B6FF598B2E2EDA25000B9E58 /* PassFiles */,
+				67DB02922E26DA670024B1EF /* InsureWallet */,
+				67DB02A32E26DA680024B1EF /* InsureWalletTests */,
+				67DB02AD2E26DA680024B1EF /* InsureWalletUITests */,
+				67DB02912E26DA670024B1EF /* Products */,
+				676B70682E30D6FE00A5FC54 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		67DB02912E26DA670024B1EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				67DB02902E26DA670024B1EF /* InsureWallet.app */,
+				67DB02A02E26DA680024B1EF /* InsureWalletTests.xctest */,
+				67DB02AA2E26DA680024B1EF /* InsureWalletUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		67DB02922E26DA670024B1EF /* InsureWallet */ = {
+			isa = PBXGroup;
+			children = (
+				B6AA5F7C2E31FF05005AE013 /* InsureWallet.entitlements */,
+				67E865DA2E2B01C60071AD9D /* Services */,
+				67E865D72E2B01A20071AD9D /* Models */,
+				6718A7AC2E27F1060012D1FA /* ViewModels */,
+				6718A7A92E27F0780012D1FA /* Views */,
+				67DB02932E26DA670024B1EF /* InsureWalletApp.swift */,
+				67DB02972E26DA680024B1EF /* Assets.xcassets */,
+				67DB02992E26DA680024B1EF /* Preview Content */,
+				6718A7B12E2AF3F40012D1FA /* AppDelegate.swift */,
+			);
+			path = InsureWallet;
+			sourceTree = "<group>";
+		};
+		67DB02992E26DA680024B1EF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				67DB029A2E26DA680024B1EF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		67DB02A32E26DA680024B1EF /* InsureWalletTests */ = {
+			isa = PBXGroup;
+			children = (
+				67DB02A42E26DA680024B1EF /* InsureWalletTests.swift */,
+				679AAF552E323341009424A7 /* PolicyViewModelTests.swift */,
+				679AAF5B2E3237C8009424A7 /* MockAuthService.swift */,
+			);
+			path = InsureWalletTests;
+			sourceTree = "<group>";
+		};
+		67DB02AD2E26DA680024B1EF /* InsureWalletUITests */ = {
+			isa = PBXGroup;
+			children = (
+				67DB02AE2E26DA680024B1EF /* InsureWalletUITests.swift */,
+				67DB02B02E26DA680024B1EF /* InsureWalletUITestsLaunchTests.swift */,
+			);
+			path = InsureWalletUITests;
+			sourceTree = "<group>";
+		};
+		67E865D72E2B01A20071AD9D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				67E865D82E2B01B50071AD9D /* User.swift */,
+				677112312E2E994A00B6FEEA /* Policy.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		67E865DA2E2B01C60071AD9D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6718A7B82E2AF85D0012D1FA /* AuthService.swift */,
+				677112332E2E997F00B6FEEA /* PolicyService.swift */,
+				6771123B2E2EAF5B00B6FEEA /* PassService.swift */,
+				676B706B2E30DC5200A5FC54 /* NotificationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B6FF598B2E2EDA25000B9E58 /* PassFiles */ = {
+			isa = PBXGroup;
+			children = (
+				B6EEA3012E314A6100E046C5 /* Lic.pkpass */,
+				6771123A2E2EADF700B6FEEA /* pass.pkpass */,
+				B6EEA2FF2E314A5800E046C5 /* Aviva.pkpass */,
+			);
+			path = PassFiles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		67DB028F2E26DA670024B1EF /* InsureWallet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67DB02B42E26DA680024B1EF /* Build configuration list for PBXNativeTarget "InsureWallet" */;
+			buildPhases = (
+				67DB028C2E26DA670024B1EF /* Sources */,
+				67DB028D2E26DA670024B1EF /* Frameworks */,
+				67DB028E2E26DA670024B1EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InsureWallet;
+			packageProductDependencies = (
+				676B70702E31E28D00A5FC54 /* FirebaseAuth */,
+				676B70722E31E28D00A5FC54 /* FirebaseCore */,
+				676B70742E31E28D00A5FC54 /* FirebaseMessaging */,
+			);
+			productName = InsureWallet;
+			productReference = 67DB02902E26DA670024B1EF /* InsureWallet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		67DB029F2E26DA680024B1EF /* InsureWalletTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67DB02B72E26DA680024B1EF /* Build configuration list for PBXNativeTarget "InsureWalletTests" */;
+			buildPhases = (
+				67DB029C2E26DA680024B1EF /* Sources */,
+				67DB029D2E26DA680024B1EF /* Frameworks */,
+				67DB029E2E26DA680024B1EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				67DB02A22E26DA680024B1EF /* PBXTargetDependency */,
+			);
+			name = InsureWalletTests;
+			packageProductDependencies = (
+				679AAF532E322E53009424A7 /* FirebaseAuth */,
+			);
+			productName = InsureWalletTests;
+			productReference = 67DB02A02E26DA680024B1EF /* InsureWalletTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		67DB02A92E26DA680024B1EF /* InsureWalletUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67DB02BA2E26DA680024B1EF /* Build configuration list for PBXNativeTarget "InsureWalletUITests" */;
+			buildPhases = (
+				67DB02A62E26DA680024B1EF /* Sources */,
+				67DB02A72E26DA680024B1EF /* Frameworks */,
+				67DB02A82E26DA680024B1EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				67DB02AC2E26DA680024B1EF /* PBXTargetDependency */,
+			);
+			name = InsureWalletUITests;
+			packageProductDependencies = (
+				679AAF572E323625009424A7 /* FirebaseAuth */,
+			);
+			productName = InsureWalletUITests;
+			productReference = 67DB02AA2E26DA680024B1EF /* InsureWalletUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		67DB02882E26DA670024B1EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					67DB028F2E26DA670024B1EF = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					67DB029F2E26DA680024B1EF = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 67DB028F2E26DA670024B1EF;
+					};
+					67DB02A92E26DA680024B1EF = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 67DB028F2E26DA670024B1EF;
+					};
+				};
+			};
+			buildConfigurationList = 67DB028B2E26DA670024B1EF /* Build configuration list for PBXProject "InsureWallet" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 67DB02872E26DA670024B1EF;
+			packageReferences = (
+				676B706F2E31E28D00A5FC54 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 67DB02912E26DA670024B1EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				67DB028F2E26DA670024B1EF /* InsureWallet */,
+				67DB029F2E26DA680024B1EF /* InsureWalletTests */,
+				67DB02A92E26DA680024B1EF /* InsureWalletUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		67DB028E2E26DA670024B1EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67DB029B2E26DA680024B1EF /* Preview Assets.xcassets in Resources */,
+				67DB02982E26DA680024B1EF /* Assets.xcassets in Resources */,
+				B6EEA3002E314A5800E046C5 /* Aviva.pkpass in Resources */,
+				B6EEA3022E314A6100E046C5 /* Lic.pkpass in Resources */,
+				676B70672E2FACF700A5FC54 /* LaunchScreen.storyboard in Resources */,
+				6771123F2E2EB21800B6FEEA /* pass.pkpass in Resources */,
+				B6AA5F7E2E3203CB005AE013 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67DB029E2E26DA680024B1EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6AA5F7F2E3203CB005AE013 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67DB02A82E26DA680024B1EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6AA5F802E3203CB005AE013 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		67DB028C2E26DA670024B1EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6771123C2E2EAF5B00B6FEEA /* PassService.swift in Sources */,
+				677112362E2E99B300B6FEEA /* PolicyViewModel.swift in Sources */,
+				B6FF59882E2ED3C6000B9E58 /* PolicyDetailsHeaderView.swift in Sources */,
+				6718A7B02E27F1570012D1FA /* LoginViewModel.swift in Sources */,
+				B6FF59862E2ED326000B9E58 /* PolicyDetailsView.swift in Sources */,
+				6718A7AB2E27F0930012D1FA /* LoginView.swift in Sources */,
+				677112322E2E994A00B6FEEA /* Policy.swift in Sources */,
+				67E865D92E2B01B50071AD9D /* User.swift in Sources */,
+				676B706C2E30DC5200A5FC54 /* NotificationService.swift in Sources */,
+				6718A7B92E2AF85D0012D1FA /* AuthService.swift in Sources */,
+				67E865DE2E2C7CBA0071AD9D /* PolicyCardView.swift in Sources */,
+				6718A7B22E2AF3F40012D1FA /* AppDelegate.swift in Sources */,
+				67DB02942E26DA670024B1EF /* InsureWalletApp.swift in Sources */,
+				677112342E2E997F00B6FEEA /* PolicyService.swift in Sources */,
+				677112382E2E99E600B6FEEA /* PolicyListView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67DB029C2E26DA680024B1EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				679AAF5C2E3237C8009424A7 /* MockAuthService.swift in Sources */,
+				679AAF5F2E323FDD009424A7 /* User.swift in Sources */,
+				679AAF562E323341009424A7 /* PolicyViewModelTests.swift in Sources */,
+				67DB02A52E26DA680024B1EF /* InsureWalletTests.swift in Sources */,
+				6718A7BA2E2AF85D0012D1FA /* AuthService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67DB02A62E26DA680024B1EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				679AAF602E323FDE009424A7 /* User.swift in Sources */,
+				6718A7BB2E2AF85D0012D1FA /* AuthService.swift in Sources */,
+				67DB02AF2E26DA680024B1EF /* InsureWalletUITests.swift in Sources */,
+				67DB02B12E26DA680024B1EF /* InsureWalletUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		67DB02A22E26DA680024B1EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 67DB028F2E26DA670024B1EF /* InsureWallet */;
+			targetProxy = 67DB02A12E26DA680024B1EF /* PBXContainerItemProxy */;
+		};
+		67DB02AC2E26DA680024B1EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 67DB028F2E26DA670024B1EF /* InsureWallet */;
+			targetProxy = 67DB02AB2E26DA680024B1EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		67DB02B22E26DA680024B1EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		67DB02B32E26DA680024B1EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		67DB02B52E26DA680024B1EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = InsureWallet/InsureWallet.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Bhavitha Gottimukkula (Q8U7629XNJ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Bhavitha Gottimukkula (Q8U7629XNJ)";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"InsureWallet/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = W7XCV2Z9X2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackathon.digitalfrontiers.wallet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Digital Frontiers Provisioning Profile";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		67DB02B62E26DA680024B1EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = InsureWallet/InsureWallet.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Bhavitha Gottimukkula (Q8U7629XNJ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Bhavitha Gottimukkula (Q8U7629XNJ)";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"InsureWallet/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = W7XCV2Z9X2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackathon.digitalfrontiers.wallet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Digital Frontiers Provisioning Profile";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		67DB02B82E26DA680024B1EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Bhavitha Gottimukkula (Q8U7629XNJ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Bhavitha Gottimukkula (Q8U7629XNJ)";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = W7XCV2Z9X2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackathon.digitalfrontiers.wallet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Digital Frontiers Provisioning Profile";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InsureWallet.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/InsureWallet";
+			};
+			name = Debug;
+		};
+		67DB02B92E26DA680024B1EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Bhavitha Gottimukkula (Q8U7629XNJ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Bhavitha Gottimukkula (Q8U7629XNJ)";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = W7XCV2Z9X2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackathon.digitalfrontiers.wallet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Digital Frontiers Provisioning Profile";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InsureWallet.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/InsureWallet";
+			};
+			name = Release;
+		};
+		67DB02BB2E26DA680024B1EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Bhavitha Gottimukkula (Q8U7629XNJ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Bhavitha Gottimukkula (Q8U7629XNJ)";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = W7XCV2Z9X2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackathon.digitalfrontiers.wallet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Digital Frontiers Provisioning Profile";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = InsureWallet;
+			};
+			name = Debug;
+		};
+		67DB02BC2E26DA680024B1EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Bhavitha Gottimukkula (Q8U7629XNJ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Bhavitha Gottimukkula (Q8U7629XNJ)";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = W7XCV2Z9X2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackathon.digitalfrontiers.wallet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Digital Frontiers Provisioning Profile";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = InsureWallet;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		67DB028B2E26DA670024B1EF /* Build configuration list for PBXProject "InsureWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67DB02B22E26DA680024B1EF /* Debug */,
+				67DB02B32E26DA680024B1EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67DB02B42E26DA680024B1EF /* Build configuration list for PBXNativeTarget "InsureWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67DB02B52E26DA680024B1EF /* Debug */,
+				67DB02B62E26DA680024B1EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67DB02B72E26DA680024B1EF /* Build configuration list for PBXNativeTarget "InsureWalletTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67DB02B82E26DA680024B1EF /* Debug */,
+				67DB02B92E26DA680024B1EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67DB02BA2E26DA680024B1EF /* Build configuration list for PBXNativeTarget "InsureWalletUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67DB02BB2E26DA680024B1EF /* Debug */,
+				67DB02BC2E26DA680024B1EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		676B706F2E31E28D00A5FC54 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = exactVersion;
+				version = 11.10.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		676B70702E31E28D00A5FC54 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 676B706F2E31E28D00A5FC54 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		676B70722E31E28D00A5FC54 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 676B706F2E31E28D00A5FC54 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		676B70742E31E28D00A5FC54 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 676B706F2E31E28D00A5FC54 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		679AAF532E322E53009424A7 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 676B706F2E31E28D00A5FC54 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		679AAF572E323625009424A7 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 676B706F2E31E28D00A5FC54 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 67DB02882E26DA670024B1EF /* Project object */;
+}
